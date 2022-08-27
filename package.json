@@ -1,0 +1,26 @@
+{
+  "name": "aws-cognito-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx forever start --uid \"aws-cognito-node\" -a  -p ./logs app.js",
+    "stop": "npx forever stop \"aws-cognito-node\"",
+    "restart": "npx forever restart \"aws-cognito-node\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.2.10",
+    "aws-sdk": "^2.1200.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "forever": "^4.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5",
+    "jwt-decode": "^3.1.2"
+  }
+}
